@@ -9,9 +9,6 @@ public class Log {
 
     public static void initialize(JavaPlugin plugin) {
         Log.plugin = plugin;
-    }
-
-    public static void initialize() {
         logFile = new File(plugin.getDataFolder(), "logs.txt");
         if (!logFile.exists()) {
             try {
